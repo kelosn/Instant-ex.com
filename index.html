@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instant-EX</title>
+    <link rel="icon" href="image/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="Home.css">
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+          const currentPath = window.location.pathname;
+          
+          // If you are not currently testing the '/myadmin' path,
+          // you can comment this out temporarily:
+          /*
+          if (currentPath.endsWith('/myadmin')) {
+              window.location.href = "myAdmin.html";
+          } else {
+              console.log("Non-admin access. Stay on the home page.");
+          }
+          */
+      });
+    </script>
+</head> 
+<body>
+  
+  <div id="policy-modal" class="modal">
+    <div class="modal-content">
+        <h2>This website uses cookies</h2>
+        <p>
+          This website uses cookies to improve user experience.
+          By using our website you consent to all cookies in accordance with our Cookie Policy.
+          <a href="policy.html">Read more</a> 
+        </p>
+        <button id="accept-policy" class="btn-accept">I Agree</button>
+    </div>
+  </div>
+
+  <header>
+    <div class="auth-buttons">
+      <a href="download.html" class="download-button">Download Now</a>
+  </div>
+  
+    <div class="header-content">
+        <div class="logo-container">
+            <img src="image/logo.png" alt="New Logo" class="header-logo">
+        </div>
+        <header>
+          <div class="header-content">
+               
+              <nav>
+                  <ul>
+                      <li><a href="index.html">Home</a></li>
+                      <li><a href="services.html">Services</a></li>
+                      <li><a href="contact.html">Contact</a></li>
+                      <li><a href="about.html">About</a></li>
+                  </ul>
+              </nav>
+          </div>
+      </header>
+      
+        
+    </div>
+  </header>
+
+ <section class="hero">
+   <div class="vertical-box">
+      <h3 class="main-message">
+        <h3>
+          Instant-ex money Exchange
+           is now only available on our app. 
+           Sending money through the Instant-ex website is no longer available.
+        </h3>
+      </h3>
+      <p class="sub-message">
+        You’ll need the Instant-ex app to continue sending fast and cheap money transfers to your loved ones.
+      </p>
+      <div class="qr-container">
+        <img src="image/qr-code.png" alt="QR Code" class="qr-code">
+        <p class="scan-message">Scan to download now</p>
+      </div>
+
+    <!-- Conversion Box -->
+    <div class="conversion-screen">
+      <h1>Exchange Your Money</h1>
+      <div class="conversion-container">
+        <div class="conversion-input">
+          <label for="convertAmount">Amount to Convert:</label>
+          <input type="number" id="convertAmount" placeholder="Enter amount" value="100">
+        </div>
+        <div class="from-currency">
+          <label for="fromCurrency">From:</label>
+          <select id="fromCurrency">
+            <option value="PLN">PLN</option>
+            <option value="EUR">EUR</option>
+            <option value="USD">USD</option>
+          </select>
+        </div>
+        <div class="to-currency">
+          <label for="toCurrency">To:</label>
+          <select id="toCurrency">
+            <option value="XAF">XAF</option>
+            <option value="GHS">GHS</option>
+            <option value="NGN">NGN</option>
+          </select>
+        </div>
+      </div>
+      <div class="conversion-results">
+        <h2>Conversion Result</h2>
+        <p>Converted Amount: <span id="result">0.00</span></p>
+      </div>
+      <div class="conversion-fee">
+        <p>1% Fee: <span id="conversionFee">0.00</span></p>
+        <p>Total to Pay: <span id="totalPay">0.00</span></p>
+      </div>
+      <button id="convertButton" class="convert-btn">Convert</button>
+    </div>
+  </div>
+</section>
+
+
+
+  <section class="cardView">
+    <div class="ag-format-container">
+        <div class="ag-courses_box">
+          <div class="ag-courses_item">
+            <a class="ag-courses-item_link">
+              <div class="ag-courses-item_bg"></div>
+              <div class="ag-courses-item_title">High speeds</div>
+              <div class="ag-courses-item_date-box">
+                Instant-EX:
+                <span class="ag-courses-item_date">
+                    We send money around the world in minutes
+                </span>
+              </div>
+            </a>
+          </div>
+
+          <div class="ag-courses_item">
+            <a class="ag-courses-item_link">
+              <div class="ag-courses-item_bg"></div>
+              <div class="ag-courses-item_title">Low fees</div>
+              <div class="ag-courses-item_date-box">
+                Instant-EX:
+                <span class="ag-courses-item_date">
+                    We send money around the world in minutes.
+                </span>
+              </div>
+            </a>
+          </div>
+
+          <div class="ag-courses_item">
+            <a class="ag-courses-item_link">
+              <div class="ag-courses-item_bg"></div>
+              <div class="ag-courses-item_title">No hassle</div>
+              <div class="ag-courses-item_date-box">
+                Instant-EX:
+                <span class="ag-courses-item_date">
+                 backed up by outstanding Customer Support.
+                </span>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="btnSection">
+            <!-- Make sure signup.html exists or link correctly -->
+           <!-- Button with JavaScript to navigate -->
+<button class="button-29" onclick="window.location.href='download.html';">Get started</button>
+
+        </div>
+    </div>
+  </section>
+
+  <section class="easy-section">
+    <h1>As easy as it gets</h1>
+    <h2>Once you’ve registered and verified your ID, all you need to do is:</h2>
+    <div class="steps">
+      <div class="step">
+        <div class="circle">
+          <img src="image/earth.png" alt="Icon 1">
+        </div>
+        <h3>1. Choose how much to send</h3>
+        <p>Send money to almost any country on the planet</p>
+      </div>
+      <div class="step">
+        <div class="circle">
+          <img src="image/profileIcon.png" alt="Icon 2">
+        </div>
+        <h3>2. Add the receiver’s details</h3>
+        <p>Send money to cards, bank accounts, e-wallets and even cash</p>
+      </div>
+      <div class="step">
+        <div class="circle">
+          <img src="image/creditCard.png" alt="Icon 3">
+        </div>
+        <h3>3. Pay for the transfer</h3>
+        <p>Send money from your card or bank account</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-section">
+    <h1>Order a transfer in <span class="highlight">less than a minute</span> with our app.</h1>
+    <button class="cta-button" onclick="window.location.href='download.html';">Sign up for free</button>
+
+  </section>
+
+  <section class="reviews-section">
+    <h2>What our users are saying</h2>
+    <div class="reviews-container">
+      <div class="review-card">
+        <div class="review-header">
+          <img src="image/person.jpeg" alt="John Doe Profile Picture" class="profile-img">
+          <h3>John Doe</h3>
+        </div>
+        <div class="stars">
+          ⭐⭐⭐⭐⭐
+        </div>
+        <p>"The best service I've used for transferring money! Fast and reliable."</p>
+      </div>
+      <div class="review-card">
+        <div class="review-header">
+          <img src="image/black person.jpeg" alt="Jane Smith Profile Picture" class="profile-img">
+          <h3>Kum Jane</h3>
+        </div>
+        <div class="stars">
+          ⭐⭐⭐⭐⭐
+        </div>
+        <p>"Very easy to use, and I love how fast the transfers are."</p>
+      </div>
+      <div class="review-card">
+        <div class="review-header">
+          <img src="image/main-pic.png" alt="MMei Chen Profile Picture" class="profile-img">
+          <h3>Chia Cynthia</h3>
+        </div>
+        <div class="stars">
+          ⭐⭐⭐⭐⭐
+        </div>
+        <p>"Great customer service and quick transactions. Highly recommend!"</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="fees-section">
+    <div class="fees-image">
+      <img src="image/look.webp" alt="Fees Illustration">
+    </div>
+    <div class="fees-content">
+      <h2>Are INSTANT-EX fees fair?</h2>
+      <p>
+        We exist to make fast money transfers more affordable. So we always try to offer the lowest possible fees and the best possible exchange rates—which makes us 90% cheaper than most bank transfers. We also let you choose how and when your money will be sent—so you decide how much to spend on each transfer. Except when the transfer is completely free!
+      </p>
+    </div>
+  </section>
+
+  <section class="fees-section reverse">
+    <div class="fees-content">
+      <h2>How quickly can I send money with INSTANT-EX?</h2>
+      <p>
+        INSTANT-EX money transfers are instant on many of our routes. But the truth is, it depends which options you choose. Want it now? Card-to-card transfers are superfast, at a higher (but still low) fee. Want it cheap? Bank-to-bank transfers are insanely cheap, but take a little longer.
+
+        Whichever you choose, the transfer only takes a minute to perform on your INSTANT-EX app.
+      </p>
+    </div>
+    <div class="fees-image">
+      <img src="image/message.jpeg" alt="Fees Illustration">
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 INTANT-EX. All rights reserved.</p>
+    <ul>
+      <li><a href="policy.html">Privacy Policy</a></li>
+      <li><a href="conditions.html">Terms and Conditions</a></li>
+      <li><a href="#">FAQ</a></li>
+    </ul>
+  </footer>
+
+  <script src="Home.js"></script>
+</body>
+</html>

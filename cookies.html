@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookies Consent - Instant-EX</title>
+    <link rel="stylesheet" href="cookies.css"> <!-- Link to your cookies.css file -->
+</head>
+<body>
+
+    <!-- Cookies Consent Banner -->
+    <div class="cookies-banner">
+        <p>
+            We use cookies to enhance your experience, analyze site traffic, and serve tailored content. By clicking "Accept," you agree to our 
+            <a href="policy.html" target="_blank">Cookies and Privacy Policy</a>. 
+            You can manage your preferences or choose to "Decline" cookies.
+        </p>
+        <div class="buttons">
+            <button id="accept-btn">Accept</button>
+            <button id="decline-btn">Decline</button>
+        </div>
+    </div>
+
+    <!-- Script to Handle Button Clicks -->
+    <script>
+        document.getElementById('accept-btn').addEventListener('click', function() {
+            // Redirect to the homepage
+            window.location.href = "index.html";
+        });
+
+        document.getElementById('decline-btn').addEventListener('click', function() {
+            // Redirect to a sign-off or goodbye page
+            window.location.href = "goodbye.html";
+        });
+    </script>
+
+</body>
+</html>

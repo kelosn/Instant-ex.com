@@ -1,0 +1,86 @@
+ /* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* Light background for contrast */
+    height: 100vh;
+    overflow: hidden; /* Prevent extra scrolling */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Cookies Banner */
+.cookies-banner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(to right, #243b55, #37adf7); /* Dark blue to sky-blue gradient */
+    color: #ffffff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+.cookies-banner p {
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.5;
+    flex: 1; /* Allow the text to take up remaining space */
+}
+
+.cookies-banner a {
+    color: #dff6ff;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.cookies-banner a:hover {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+/* Buttons */
+.buttons {
+    display: flex;
+    gap: 15px; /* Space between buttons */
+}
+
+.buttons button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Accept Button */
+#accept-btn {
+    background-color: #37adf7; /* Sky blue */
+    color: #ffffff;
+}
+
+#accept-btn:hover {
+    background-color: #1d82c3; /* Darker blue */
+}
+
+/* Decline Button */
+#decline-btn {
+    background-color: #ff6b6b; /* Red */
+    color: #ffffff;
+}
+
+#decline-btn:hover {
+    background-color: #d64545; /* Darker red */
+}
